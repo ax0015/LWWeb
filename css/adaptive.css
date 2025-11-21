@@ -1,0 +1,16 @@
+.phone-only {
+    display: none !important;
+}
+
+.wide-only {
+    display: block !important;
+}
+
+@media (max-width: 420px) {
+    .phone-only {
+        display: block !important;
+    }
+    .wide-only {
+        display: none !important;
+    }
+}

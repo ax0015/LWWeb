@@ -11,8 +11,8 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container">
 			<a class="navbar-brand" href="/index.html">Main page</a>
-			<a class="navbar-brand" href="/about.html">About us</a>
-			<a class="navbar-brand" href="/contacts.html">Contacts</a>
+			<a class="navbar-brand wide-only" href="/about.html">About us</a>
+			<a class="navbar-brand wide-only" href="/contacts.html">Contacts</a>
 			<div class="dropdown">
 				<button 
 					class="btn border rounded btn-blue dropdown-toggle" 
@@ -24,6 +24,8 @@
 					Account
 				</button>
 				<ul class="dropdown-menu border rounded" aria-labelledby="accountMenuButton">
+					<li><a class="dropdown-item phone-only" href="/about.html">About us</a></li>
+					<li><a class="dropdown-item phone-only" href="/contacts.html">Contacts</a></li>
 					<li><a class="dropdown-item" href="/account.html">Account info</a></li>
 					<li><a class="dropdown-item" href="/forms/update-news.html">Update news field</a></li>
 					<li><a class="dropdown-item" href="/lists/tags.html">Tags list</a></li>
@@ -42,7 +44,7 @@
 	</nav>
 	
 	<main>
-		<form class="d-flex flex-column gap-3 justify-content-center align-items-center">
+		<!--<form class="d-flex flex-column gap-3 justify-content-center align-items-center">
 			<div class="mb-3">
 				<label for="tagName" class="form-label">Tag name</label>
 				<input 
@@ -54,6 +56,15 @@
 				>
 			</div>
 			<button type="submit" class="btn btn-success rounded-3 py-2">Add</button>
+		</form>-->
+		<form class="form-container">
+			<p>Tag name:</p>
+			<input 
+				pattern="[a-z0-9\-]+" 
+				placeholder="tagged-by-this-tag" 
+				required
+			>
+			<button type="submit" class="submit-button">Add</button>
 		</form>
 	</main>
 	<footer>

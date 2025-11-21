@@ -1,0 +1,62 @@
+
+.test-text-div {
+	border: none;
+    border-radius: 6px;
+	padding: 12px;
+	margin: 12px;
+	background-color: #aaccff;
+	font-family: "Consolas", "Courier New", monospace;
+	font-size: 14px;
+	max-height: 300px;
+	overflow-y: auto;
+}
+
+.test-grid-container {
+	display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+	margin: 12px;
+}
+
+.test-grid-container > button {
+	flex: 1;
+    min-width: 150px;
+	border: none;
+    border-radius: 8px;
+	padding: 10px;
+	background-color: #aaffaa;
+	transition: background-color 0.2s ease;
+}
+
+.test-grid-container > button:active {
+	background-color: #99dd99;
+}
+
+#logo-news-container {
+	display: flex;
+	align-items: flex-start;
+	gap: 100px;
+	max-width: 1200px;
+	max-height: 300px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#logo-news-container > img {
+	width: 300px;
+	height: auto;
+}
+#logo-news-container > div {
+	max-height: 300px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	overflow-y: auto;
+}
+
+@media (max-width: 700px) {
+    #logo-news-container {
+        flex-direction: column;
+		max-height: 615px;
+		gap: 15px;
+    }
+}
